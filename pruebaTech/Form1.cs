@@ -7,7 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data;
 using System.Data.SqlClient;
 
 namespace pruebaTech
@@ -61,8 +60,8 @@ namespace pruebaTech
                 textBoxName.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
                 ageSelect.Value = Convert.ToInt32(dataGridView1.CurrentRow.Cells[2].Value.ToString());
                 comboBoxContinent.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString();
-                //dateTimeNacimiento.Value = dataGridView1.CurrentRow.Cells[4].Value.ToString();
                 textBoxDescription.Text = dataGridView1.CurrentRow.Cells[5].Value.ToString();
+                
                 if (dataGridView1.CurrentRow.Cells[6].Value.ToString() == "Masculino")
                 {
                     radioButton1Sexo.Checked = true;
@@ -73,6 +72,8 @@ namespace pruebaTech
                     radioButton2Sexo.Checked = true;
                     radioButton1Sexo.Checked = false;
                 }
+                dateTimeNacimiento.Value = Convert.ToDateTime(dataGridView1.CurrentRow.Cells[4].Value.ToString());
+                
             }
             catch { }
             
@@ -153,6 +154,19 @@ namespace pruebaTech
             cmd3.ExecuteNonQuery();
             MessageBox.Show("Eliminado");
             dataGridView1.DataSource = Listar();
+        }
+
+        private void ButtonVaciar_Click(object sender, EventArgs e)
+        {
+            
+                textBoxCI.Text = "";
+                textBoxName.Text = "";
+                ageSelect.Value = 0;
+                comboBoxContinent.Text = "";
+                textBoxDescription.Text = "";
+                radioButton1Sexo.Checked = false;
+                radioButton2Sexo.Checked = false;
+
         }
     }
 }

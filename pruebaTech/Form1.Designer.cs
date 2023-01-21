@@ -54,6 +54,8 @@
             this.textBoxCI = new System.Windows.Forms.TextBox();
             this.dateTimeNacimiento = new System.Windows.Forms.DateTimePicker();
             this.label1 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.buttonVaciar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.flowLayoutPanel2.SuspendLayout();
             this.flowLayoutPanel3.SuspendLayout();
@@ -69,7 +71,7 @@
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(9, 315);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
@@ -82,7 +84,7 @@
             this.flowLayoutPanel2.Controls.Add(this.labelNombre);
             this.flowLayoutPanel2.Controls.Add(this.textBoxName);
             this.flowLayoutPanel2.Location = new System.Drawing.Point(22, 32);
-            this.flowLayoutPanel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.flowLayoutPanel2.Margin = new System.Windows.Forms.Padding(2);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
             this.flowLayoutPanel2.Size = new System.Drawing.Size(185, 54);
             this.flowLayoutPanel2.TabIndex = 2;
@@ -101,7 +103,7 @@
             // textBoxName
             // 
             this.textBoxName.Location = new System.Drawing.Point(2, 22);
-            this.textBoxName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxName.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxName.Name = "textBoxName";
             this.textBoxName.Size = new System.Drawing.Size(158, 20);
             this.textBoxName.TabIndex = 1;
@@ -112,7 +114,7 @@
             this.flowLayoutPanel3.Controls.Add(this.labelEdad);
             this.flowLayoutPanel3.Controls.Add(this.ageSelect);
             this.flowLayoutPanel3.Location = new System.Drawing.Point(22, 158);
-            this.flowLayoutPanel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.flowLayoutPanel3.Margin = new System.Windows.Forms.Padding(2);
             this.flowLayoutPanel3.Name = "flowLayoutPanel3";
             this.flowLayoutPanel3.Size = new System.Drawing.Size(186, 29);
             this.flowLayoutPanel3.TabIndex = 3;
@@ -131,7 +133,7 @@
             // ageSelect
             // 
             this.ageSelect.Location = new System.Drawing.Point(57, 2);
-            this.ageSelect.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ageSelect.Margin = new System.Windows.Forms.Padding(2);
             this.ageSelect.Maximum = new decimal(new int[] {
             120,
             0,
@@ -147,7 +149,7 @@
             this.flowLayoutPanel4.Controls.Add(this.radioButton1Sexo);
             this.flowLayoutPanel4.Controls.Add(this.radioButton2Sexo);
             this.flowLayoutPanel4.Location = new System.Drawing.Point(22, 215);
-            this.flowLayoutPanel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.flowLayoutPanel4.Margin = new System.Windows.Forms.Padding(2);
             this.flowLayoutPanel4.Name = "flowLayoutPanel4";
             this.flowLayoutPanel4.Size = new System.Drawing.Size(94, 76);
             this.flowLayoutPanel4.TabIndex = 4;
@@ -167,7 +169,7 @@
             // 
             this.radioButton1Sexo.AutoSize = true;
             this.radioButton1Sexo.Location = new System.Drawing.Point(2, 22);
-            this.radioButton1Sexo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.radioButton1Sexo.Margin = new System.Windows.Forms.Padding(2);
             this.radioButton1Sexo.Name = "radioButton1Sexo";
             this.radioButton1Sexo.Size = new System.Drawing.Size(73, 17);
             this.radioButton1Sexo.TabIndex = 1;
@@ -179,7 +181,7 @@
             // 
             this.radioButton2Sexo.AutoSize = true;
             this.radioButton2Sexo.Location = new System.Drawing.Point(2, 43);
-            this.radioButton2Sexo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.radioButton2Sexo.Margin = new System.Windows.Forms.Padding(2);
             this.radioButton2Sexo.Name = "radioButton2Sexo";
             this.radioButton2Sexo.Size = new System.Drawing.Size(71, 17);
             this.radioButton2Sexo.TabIndex = 2;
@@ -192,7 +194,7 @@
             this.flowLayoutPanel5.Controls.Add(this.labelContinente);
             this.flowLayoutPanel5.Controls.Add(this.comboBoxContinent);
             this.flowLayoutPanel5.Location = new System.Drawing.Point(297, 25);
-            this.flowLayoutPanel5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.flowLayoutPanel5.Margin = new System.Windows.Forms.Padding(2);
             this.flowLayoutPanel5.Name = "flowLayoutPanel5";
             this.flowLayoutPanel5.Size = new System.Drawing.Size(127, 61);
             this.flowLayoutPanel5.TabIndex = 5;
@@ -212,7 +214,7 @@
             // 
             this.comboBoxContinent.FormattingEnabled = true;
             this.comboBoxContinent.Location = new System.Drawing.Point(2, 22);
-            this.comboBoxContinent.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBoxContinent.Margin = new System.Windows.Forms.Padding(2);
             this.comboBoxContinent.Name = "comboBoxContinent";
             this.comboBoxContinent.Size = new System.Drawing.Size(123, 21);
             this.comboBoxContinent.TabIndex = 1;
@@ -222,7 +224,7 @@
             this.flowLayoutPanel6.Controls.Add(this.label2);
             this.flowLayoutPanel6.Controls.Add(this.textBoxDescription);
             this.flowLayoutPanel6.Location = new System.Drawing.Point(297, 106);
-            this.flowLayoutPanel6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.flowLayoutPanel6.Margin = new System.Windows.Forms.Padding(2);
             this.flowLayoutPanel6.Name = "flowLayoutPanel6";
             this.flowLayoutPanel6.Size = new System.Drawing.Size(150, 107);
             this.flowLayoutPanel6.TabIndex = 6;
@@ -241,7 +243,7 @@
             // textBoxDescription
             // 
             this.textBoxDescription.Location = new System.Drawing.Point(2, 22);
-            this.textBoxDescription.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxDescription.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxDescription.Multiline = true;
             this.textBoxDescription.Name = "textBoxDescription";
             this.textBoxDescription.Size = new System.Drawing.Size(138, 76);
@@ -252,17 +254,18 @@
             this.flowLayoutPanel7.Controls.Add(this.buttonAdd);
             this.flowLayoutPanel7.Controls.Add(this.buttonEdit);
             this.flowLayoutPanel7.Controls.Add(this.buttonDelete);
-            this.flowLayoutPanel7.Location = new System.Drawing.Point(506, 466);
-            this.flowLayoutPanel7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.flowLayoutPanel7.Controls.Add(this.button1);
+            this.flowLayoutPanel7.Location = new System.Drawing.Point(478, 464);
+            this.flowLayoutPanel7.Margin = new System.Windows.Forms.Padding(2);
             this.flowLayoutPanel7.Name = "flowLayoutPanel7";
-            this.flowLayoutPanel7.Size = new System.Drawing.Size(298, 36);
+            this.flowLayoutPanel7.Size = new System.Drawing.Size(298, 34);
             this.flowLayoutPanel7.TabIndex = 7;
             // 
             // buttonAdd
             // 
             this.buttonAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonAdd.Location = new System.Drawing.Point(2, 2);
-            this.buttonAdd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonAdd.Margin = new System.Windows.Forms.Padding(2);
             this.buttonAdd.Name = "buttonAdd";
             this.buttonAdd.Size = new System.Drawing.Size(92, 24);
             this.buttonAdd.TabIndex = 0;
@@ -274,7 +277,7 @@
             // 
             this.buttonEdit.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonEdit.Location = new System.Drawing.Point(98, 2);
-            this.buttonEdit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonEdit.Margin = new System.Windows.Forms.Padding(2);
             this.buttonEdit.Name = "buttonEdit";
             this.buttonEdit.Size = new System.Drawing.Size(92, 24);
             this.buttonEdit.TabIndex = 1;
@@ -286,7 +289,7 @@
             // 
             this.buttonDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonDelete.Location = new System.Drawing.Point(194, 2);
-            this.buttonDelete.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonDelete.Margin = new System.Windows.Forms.Padding(2);
             this.buttonDelete.Name = "buttonDelete";
             this.buttonDelete.Size = new System.Drawing.Size(92, 24);
             this.buttonDelete.TabIndex = 2;
@@ -299,7 +302,7 @@
             this.flowLayoutPanel1.Controls.Add(this.labelCI);
             this.flowLayoutPanel1.Controls.Add(this.textBoxCI);
             this.flowLayoutPanel1.Location = new System.Drawing.Point(22, 106);
-            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(150, 29);
             this.flowLayoutPanel1.TabIndex = 8;
@@ -318,7 +321,7 @@
             // textBoxCI
             // 
             this.textBoxCI.Location = new System.Drawing.Point(33, 2);
-            this.textBoxCI.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxCI.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxCI.MaxLength = 11;
             this.textBoxCI.Name = "textBoxCI";
             this.textBoxCI.Size = new System.Drawing.Size(112, 20);
@@ -343,11 +346,31 @@
             this.label1.Text = "Fecha de Nacimiento";
             this.label1.Click += new System.EventHandler(this.Label1_Click_1);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(3, 31);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 3;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // buttonVaciar
+            // 
+            this.buttonVaciar.Location = new System.Drawing.Point(687, 258);
+            this.buttonVaciar.Name = "buttonVaciar";
+            this.buttonVaciar.Size = new System.Drawing.Size(89, 33);
+            this.buttonVaciar.TabIndex = 11;
+            this.buttonVaciar.Text = "Vaciar Campos";
+            this.buttonVaciar.UseVisualStyleBackColor = true;
+            this.buttonVaciar.Click += new System.EventHandler(this.ButtonVaciar_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(814, 511);
+            this.ClientSize = new System.Drawing.Size(814, 509);
+            this.Controls.Add(this.buttonVaciar);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dateTimeNacimiento);
             this.Controls.Add(this.flowLayoutPanel1);
@@ -358,7 +381,7 @@
             this.Controls.Add(this.flowLayoutPanel3);
             this.Controls.Add(this.flowLayoutPanel2);
             this.Controls.Add(this.dataGridView1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -410,6 +433,8 @@
         private System.Windows.Forms.Button buttonDelete;
         private System.Windows.Forms.DateTimePicker dateTimeNacimiento;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button buttonVaciar;
     }
 }
 
